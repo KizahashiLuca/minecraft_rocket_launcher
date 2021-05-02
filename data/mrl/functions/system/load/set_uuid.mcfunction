@@ -9,10 +9,10 @@
 #########################################################
 
 ## Set scoreboards
-execute store result score @s PlayerUUID0 run data get entity @s UUID[0]
-execute store result score @s PlayerUUID1 run data get entity @s UUID[1]
-execute store result score @s PlayerUUID2 run data get entity @s UUID[2]
-execute store result score @s PlayerUUID3 run data get entity @s UUID[3]
+execute store result score @s MRL_PlayerUUID0 run data get entity @s UUID[0]
+execute store result score @s MRL_PlayerUUID1 run data get entity @s UUID[1]
+execute store result score @s MRL_PlayerUUID2 run data get entity @s UUID[2]
+execute store result score @s MRL_PlayerUUID3 run data get entity @s UUID[3]
 
 ## Set tags
 tag @s add MRL_SetUUID

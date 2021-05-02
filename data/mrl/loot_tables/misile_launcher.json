@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[\"\",{\"text\":\"Misile Launcher\",\"color\":\"aqua\",\"italic\":false}]'},ChargedProjectiles:[{id:\"minecraft:firework_rocket\",Count:1b,tag:{display:{Name:'[\"\",{\"text\":\"Guided projectile (Misile)\",\"color\":\"aqua\",\"italic\":false}]'}}}],Damage:0,Unbreakable:1b,Charged:1b,Tags:[\"MRL_MisileLauncher\"]}"
+              "tag": "{display:{Name:'[\"\",{\"text\":\"Misile Launcher\",\"color\":\"aqua\",\"italic\":false}]'},ChargedProjectiles:[{id:\"minecraft:firework_rocket\",Count:1b,tag:{display:{Name:'[\"\",{\"text\":\"Guided projectile (Misile)\",\"color\":\"aqua\",\"italic\":false}]'}}}],Damage:0,Charged:1b,Tags:[\"MRL_MisileLauncher\"]}"
             }
           ]
         }

@@ -2,6 +2,6 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "nbt": "{SelectedItem:{id:\"minecraft:crossbow\",Count:1b,tag:{ChargedProjectiles:[],Unbreakable:1b,Charged:0b,Tags:[\"MRL_MisileLauncher\"]}}}"
+    "nbt": "{SelectedItem:{id:\"minecraft:crossbow\",Count:1b,tag:{ChargedProjectiles:[],Charged:0b,Tags:[\"MRL_MisileLauncher\"]}}}"
   }
 }

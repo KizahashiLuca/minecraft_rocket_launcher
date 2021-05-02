@@ -10,12 +10,12 @@
 
 ## Explode
 summon minecraft:tnt ~ ~ ~
-scoreboard players set @p[tag=MRL_MisileShooter] PrvTargetUUID0 0
-scoreboard players set @p[tag=MRL_MisileShooter] PrvTargetUUID1 0
-scoreboard players set @p[tag=MRL_MisileShooter] PrvTargetUUID2 0
-scoreboard players set @p[tag=MRL_MisileShooter] PrvTargetUUID3 0
-scoreboard players set @p[tag=MRL_MisileShooter] TargetUUID0 1
-scoreboard players set @p[tag=MRL_MisileShooter] TargetUUID1 1
-scoreboard players set @p[tag=MRL_MisileShooter] TargetUUID2 1
-scoreboard players set @p[tag=MRL_MisileShooter] TargetUUID3 1
-scoreboard players set @p[tag=MRL_MisileShooter] TargetReset 1
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_PrvTgtUUID0 0
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_PrvTgtUUID1 0
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_PrvTgtUUID2 0
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_PrvTgtUUID3 0
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_TargetUUID0 1
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_TargetUUID1 1
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_TargetUUID2 1
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_TargetUUID3 1
+scoreboard players set @p[tag=MRL_MisileShooter] MRL_TargetReset 1

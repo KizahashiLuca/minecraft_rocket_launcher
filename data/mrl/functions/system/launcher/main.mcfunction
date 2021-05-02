@@ -13,7 +13,7 @@ execute as @s[predicate=mrl:after_shot/rocket_launcher/mainhand] run function mr
 execute as @s[predicate=mrl:after_shot/rocket_launcher/offhand] run function mrl:system/launcher/rocket_launcher/detect_shoot/offhand
 
 ## Misile Launcher
-execute as @s[scores={TargetReset=0},predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_success
-execute as @s[scores={TargetReset=0},predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_success
-execute as @s[scores={TargetReset=1..},predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_failed
-execute as @s[scores={TargetReset=1..},predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_failed
+execute as @s[scores={MRL_TargetReset=0},predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_success
+execute as @s[scores={MRL_TargetReset=0},predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_success
+execute as @s[scores={MRL_TargetReset=1..},predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_failed
+execute as @s[scores={MRL_TargetReset=1..},predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_failed

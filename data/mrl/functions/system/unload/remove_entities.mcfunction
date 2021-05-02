@@ -30,3 +30,8 @@ kill @e[type=minecraft:firework_rocket,tag=MRL_DetectRocketExplode]
 kill @e[type=minecraft:area_effect_cloud,tag=MRL_DetectRocket]
 kill @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingRocket]
 kill @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitedRocket]
+
+## Remove entities - summoning trader
+kill @e[type=minecraft:area_effect_cloud,tag=MRL_SummonTraderArea]
+kill @e[type=minecraft:wandering_trader,tag=MRL_ArmsTrader]
+kill @e[type=minecraft:mule,tag=MRL_NotSetTarget]

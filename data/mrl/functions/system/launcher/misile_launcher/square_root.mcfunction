@@ -9,7 +9,7 @@
 #########################################################
 
 ## Set square root
-scoreboard players operation @s SqrtVarX += @s SqrtVarI
-scoreboard players add @s SqrtXYZ 1
-scoreboard players add @s SqrtVarI 2
-execute if score @s NormXYZ > @s SqrtVarX run function mrl:system/launcher/misile_launcher/square_root
+scoreboard players operation @s MRL_SqrtVarX += @s MRL_SqrtVarI
+scoreboard players add @s MRL_SqrtXYZ 1
+scoreboard players add @s MRL_SqrtVarI 2
+execute if score @s MRL_NormXYZ > @s MRL_SqrtVarX run function mrl:system/launcher/misile_launcher/square_root

@@ -9,14 +9,14 @@
 #########################################################
 
 ## Detect firework_rocket
-execute store result score @s PlayerUUID0 run data get entity @s Owner[0]
-execute store result score @s PlayerUUID1 run data get entity @s Owner[1]
-execute store result score @s PlayerUUID2 run data get entity @s Owner[2]
-execute store result score @s PlayerUUID3 run data get entity @s Owner[3]
+execute store result score @s MRL_PlayerUUID0 run data get entity @s Owner[0]
+execute store result score @s MRL_PlayerUUID1 run data get entity @s Owner[1]
+execute store result score @s MRL_PlayerUUID2 run data get entity @s Owner[2]
+execute store result score @s MRL_PlayerUUID3 run data get entity @s Owner[3]
 
-execute as @e[type=minecraft:firework_rocket,tag=!MRL_IgnitedMisile] if score @p[tag=MRL_MisileShooter] PlayerUUID0 = @s PlayerUUID0 if score @p[tag=MRL_MisileShooter] PlayerUUID1 = @s PlayerUUID1 if score @p[tag=MRL_MisileShooter] PlayerUUID2 = @s PlayerUUID2 if score @p[tag=MRL_MisileShooter] PlayerUUID3 = @s PlayerUUID3 run tag @s add MRL_IgnitingMisile
+execute as @e[type=minecraft:firework_rocket,tag=!MRL_IgnitedMisile] if score @p[tag=MRL_MisileShooter] MRL_PlayerUUID0 = @s MRL_PlayerUUID0 if score @p[tag=MRL_MisileShooter] MRL_PlayerUUID1 = @s MRL_PlayerUUID1 if score @p[tag=MRL_MisileShooter] MRL_PlayerUUID2 = @s MRL_PlayerUUID2 if score @p[tag=MRL_MisileShooter] MRL_PlayerUUID3 = @s MRL_PlayerUUID3 run tag @s add MRL_IgnitingMisile
 
-scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] TargetUUID0 = @p[tag=MRL_MisileShooter] TargetUUID0
-scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] TargetUUID1 = @p[tag=MRL_MisileShooter] TargetUUID1
-scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] TargetUUID2 = @p[tag=MRL_MisileShooter] TargetUUID2
-scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] TargetUUID3 = @p[tag=MRL_MisileShooter] TargetUUID3
+scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID0 = @p[tag=MRL_MisileShooter] MRL_TargetUUID0
+scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID1 = @p[tag=MRL_MisileShooter] MRL_TargetUUID1
+scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID2 = @p[tag=MRL_MisileShooter] MRL_TargetUUID2
+scoreboard players operation @e[tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID3 = @p[tag=MRL_MisileShooter] MRL_TargetUUID3

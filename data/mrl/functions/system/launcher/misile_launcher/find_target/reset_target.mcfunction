@@ -9,12 +9,12 @@
 #########################################################
 
 ## Set scoreboard
-scoreboard players set @s TargetUUID0 1
-scoreboard players set @s TargetUUID1 1
-scoreboard players set @s TargetUUID2 1
-scoreboard players set @s TargetUUID3 1
-scoreboard players set @s PrvTargetUUID0 0
-scoreboard players set @s PrvTargetUUID1 0
-scoreboard players set @s PrvTargetUUID2 0
-scoreboard players set @s PrvTargetUUID3 0
-scoreboard players set @s TargetReset 1
+scoreboard players set @s MRL_TargetUUID0 1
+scoreboard players set @s MRL_TargetUUID1 1
+scoreboard players set @s MRL_TargetUUID2 1
+scoreboard players set @s MRL_TargetUUID3 1
+scoreboard players set @s MRL_PrvTgtUUID0 0
+scoreboard players set @s MRL_PrvTgtUUID1 0
+scoreboard players set @s MRL_PrvTgtUUID2 0
+scoreboard players set @s MRL_PrvTgtUUID3 0
+scoreboard players set @s MRL_TargetReset 1

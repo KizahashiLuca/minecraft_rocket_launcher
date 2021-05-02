@@ -37,3 +37,9 @@ tag @e remove MRL_DetectRocketExplode
 tag @e remove MRL_DetectRocket
 tag @e remove MRL_IgnitingRocket
 tag @e remove MRL_IgnitedRocket
+
+## Remove tags - summoning trader
+tag @e remove MRL_SummonTraderArea
+tag @e remove MRL_NotSetTarget
+tag @e remove MRL_ArmsTrader
+tag @e remove MRL_NotSetTarget

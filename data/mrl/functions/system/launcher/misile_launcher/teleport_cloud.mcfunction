@@ -10,18 +10,18 @@
 
 ## Summon cloud
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["MRL_IgnitingMisile"],NoGravity:1b,Invulnerable:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:2147483647}
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID0 = @e[tag=MRL_Misile,limit=1] PlayerUUID0
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID1 = @e[tag=MRL_Misile,limit=1] PlayerUUID1
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID2 = @e[tag=MRL_Misile,limit=1] PlayerUUID2
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID3 = @e[tag=MRL_Misile,limit=1] PlayerUUID3
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID0 = @e[tag=MRL_Misile,limit=1] MisileUUID0
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID1 = @e[tag=MRL_Misile,limit=1] MisileUUID1
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID2 = @e[tag=MRL_Misile,limit=1] MisileUUID2
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID3 = @e[tag=MRL_Misile,limit=1] MisileUUID3
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID0 = @e[tag=MRL_Misile,limit=1] TargetUUID0
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID1 = @e[tag=MRL_Misile,limit=1] TargetUUID1
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID2 = @e[tag=MRL_Misile,limit=1] TargetUUID2
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID3 = @e[tag=MRL_Misile,limit=1] TargetUUID3
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID0 = @e[tag=MRL_Misile,limit=1] MRL_PlayerUUID0
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID1 = @e[tag=MRL_Misile,limit=1] MRL_PlayerUUID1
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID2 = @e[tag=MRL_Misile,limit=1] MRL_PlayerUUID2
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID3 = @e[tag=MRL_Misile,limit=1] MRL_PlayerUUID3
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID0 = @e[tag=MRL_Misile,limit=1] MRL_MisileUUID0
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID1 = @e[tag=MRL_Misile,limit=1] MRL_MisileUUID1
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID2 = @e[tag=MRL_Misile,limit=1] MRL_MisileUUID2
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID3 = @e[tag=MRL_Misile,limit=1] MRL_MisileUUID3
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID0 = @e[tag=MRL_Misile,limit=1] MRL_TargetUUID0
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID1 = @e[tag=MRL_Misile,limit=1] MRL_TargetUUID1
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID2 = @e[tag=MRL_Misile,limit=1] MRL_TargetUUID2
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID3 = @e[tag=MRL_Misile,limit=1] MRL_TargetUUID3
 
 ## Add a tag
 tag @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] add MRL_IgnitedMisile

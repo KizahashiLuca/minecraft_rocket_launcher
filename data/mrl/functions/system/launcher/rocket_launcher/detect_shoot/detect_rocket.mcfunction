@@ -9,9 +9,9 @@
 #########################################################
 
 ## Detect firework_rocket
-execute store result score @s PlayerUUID0 run data get entity @s Owner[0]
-execute store result score @s PlayerUUID1 run data get entity @s Owner[1]
-execute store result score @s PlayerUUID2 run data get entity @s Owner[2]
-execute store result score @s PlayerUUID3 run data get entity @s Owner[3]
+execute store result score @s MRL_PlayerUUID0 run data get entity @s Owner[0]
+execute store result score @s MRL_PlayerUUID1 run data get entity @s Owner[1]
+execute store result score @s MRL_PlayerUUID2 run data get entity @s Owner[2]
+execute store result score @s MRL_PlayerUUID3 run data get entity @s Owner[3]
 
-execute if score @p[tag=MRL_RocketShooter] PlayerUUID0 = @s PlayerUUID0 if score @p[tag=MRL_RocketShooter] PlayerUUID1 = @s PlayerUUID1 if score @p[tag=MRL_RocketShooter] PlayerUUID2 = @s PlayerUUID2 if score @p[tag=MRL_RocketShooter] PlayerUUID3 = @s PlayerUUID3 run tag @s add MRL_IgnitingRocket
+execute if score @p[tag=MRL_RocketShooter] MRL_PlayerUUID0 = @s MRL_PlayerUUID0 if score @p[tag=MRL_RocketShooter] MRL_PlayerUUID1 = @s MRL_PlayerUUID1 if score @p[tag=MRL_RocketShooter] MRL_PlayerUUID2 = @s MRL_PlayerUUID2 if score @p[tag=MRL_RocketShooter] MRL_PlayerUUID3 = @s MRL_PlayerUUID3 run tag @s add MRL_IgnitingRocket

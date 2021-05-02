@@ -5,14 +5,14 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{id:\"minecraft:crossbow\",Count:1b,tag:{ChargedProjectiles:[],Unbreakable:1b,Charged:0b,Tags:[\"MRL_RocketLauncher\"]}}]}"
+        "nbt": "{Inventory:[{id:\"minecraft:crossbow\",Count:1b,tag:{ChargedProjectiles:[],Charged:0b,Tags:[\"MRL_RocketLauncher\"]}}]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Inventory:[{id:\"minecraft:crossbow\",Count:1b,tag:{ChargedProjectiles:[],Unbreakable:1b,Charged:0b,Tags:[\"MRL_MisileLauncher\"]}}]}"
+        "nbt": "{Inventory:[{id:\"minecraft:crossbow\",Count:1b,tag:{ChargedProjectiles:[],Charged:0b,Tags:[\"MRL_MisileLauncher\"]}}]}"
       }
     }
   ]

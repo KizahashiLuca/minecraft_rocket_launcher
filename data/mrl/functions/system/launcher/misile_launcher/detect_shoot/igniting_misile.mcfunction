@@ -9,26 +9,26 @@
 #########################################################
 
 ## Set scoreboard
-execute store result score @s MisileUUID0 run data get entity @s UUID[0]
-execute store result score @s MisileUUID1 run data get entity @s UUID[1]
-execute store result score @s MisileUUID2 run data get entity @s UUID[2]
-execute store result score @s MisileUUID3 run data get entity @s UUID[3]
+execute store result score @s MRL_MisileUUID0 run data get entity @s UUID[0]
+execute store result score @s MRL_MisileUUID1 run data get entity @s UUID[1]
+execute store result score @s MRL_MisileUUID2 run data get entity @s UUID[2]
+execute store result score @s MRL_MisileUUID3 run data get entity @s UUID[3]
 data modify entity @s LifeTime set value 1000
 
 ## Summon cloud
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["MRL_IgnitingMisile"],NoGravity:1b,Invulnerable:1b,Particle:"minecraft:block minecraft:air",Radius:0.5f,Duration:2147483647}
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID0 = @s PlayerUUID0
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID1 = @s PlayerUUID1
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID2 = @s PlayerUUID2
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] PlayerUUID3 = @s PlayerUUID3
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID0 = @s MisileUUID0
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID1 = @s MisileUUID1
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID2 = @s MisileUUID2
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MisileUUID3 = @s MisileUUID3
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID0 = @s TargetUUID0
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID1 = @s TargetUUID1
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID2 = @s TargetUUID2
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] TargetUUID3 = @s TargetUUID3
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID0 = @s MRL_PlayerUUID0
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID1 = @s MRL_PlayerUUID1
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID2 = @s MRL_PlayerUUID2
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_PlayerUUID3 = @s MRL_PlayerUUID3
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID0 = @s MRL_MisileUUID0
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID1 = @s MRL_MisileUUID1
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID2 = @s MRL_MisileUUID2
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_MisileUUID3 = @s MRL_MisileUUID3
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID0 = @s MRL_TargetUUID0
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID1 = @s MRL_TargetUUID1
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID2 = @s MRL_TargetUUID2
+scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitingMisile,limit=1] MRL_TargetUUID3 = @s MRL_TargetUUID3
 
 ## Add a tag
 tag @s add MRL_IgnitedMisile

@@ -9,49 +9,51 @@
 #########################################################
 
 ## Remove scoreboards
-scoreboard objectives remove OnLoad
+scoreboard objectives remove MRL_OnLoad
 ## Remove scoreboards for position
-scoreboard objectives remove PosX
-scoreboard objectives remove PosY
-scoreboard objectives remove PosZ
+scoreboard objectives remove MRL_PosX
+scoreboard objectives remove MRL_PosY
+scoreboard objectives remove MRL_PosZ
 ## Remove scoreboards for calculation
-scoreboard objectives remove 1000
+scoreboard objectives remove MRL_1000
 ## Remove scoreboards for launcher common
-scoreboard objectives remove PlayerUUID0
-scoreboard objectives remove PlayerUUID1
-scoreboard objectives remove PlayerUUID2
-scoreboard objectives remove PlayerUUID3
-scoreboard objectives remove NotExplosive
+scoreboard objectives remove MRL_PlayerUUID0
+scoreboard objectives remove MRL_PlayerUUID1
+scoreboard objectives remove MRL_PlayerUUID2
+scoreboard objectives remove MRL_PlayerUUID3
+scoreboard objectives remove MRL_NotExplosive
 ## Remove scoreboards for rocket launcher
-scoreboard objectives remove RocketUUID0
-scoreboard objectives remove RocketUUID1
-scoreboard objectives remove RocketUUID2
-scoreboard objectives remove RocketUUID3
+scoreboard objectives remove MRL_RocketUUID0
+scoreboard objectives remove MRL_RocketUUID1
+scoreboard objectives remove MRL_RocketUUID2
+scoreboard objectives remove MRL_RocketUUID3
 ## Remove scoreboards for misile launcher
-scoreboard objectives remove MisileUUID0
-scoreboard objectives remove MisileUUID1
-scoreboard objectives remove MisileUUID2
-scoreboard objectives remove MisileUUID3
-scoreboard objectives remove TargetUUID0
-scoreboard objectives remove TargetUUID1
-scoreboard objectives remove TargetUUID2
-scoreboard objectives remove TargetUUID3
-scoreboard objectives remove PrvTargetUUID0
-scoreboard objectives remove PrvTargetUUID1
-scoreboard objectives remove PrvTargetUUID2
-scoreboard objectives remove PrvTargetUUID3
-scoreboard objectives remove TargetReset
-scoreboard objectives remove TargetChanged
-scoreboard objectives remove DiffX
-scoreboard objectives remove DiffY
-scoreboard objectives remove DiffZ
-scoreboard objectives remove PowDiffX
-scoreboard objectives remove PowDiffY
-scoreboard objectives remove PowDiffZ
-scoreboard objectives remove NormXYZ
-scoreboard objectives remove SqrtXYZ
-scoreboard objectives remove SqrtVarI
-scoreboard objectives remove SqrtVarX
+scoreboard objectives remove MRL_MisileUUID0
+scoreboard objectives remove MRL_MisileUUID1
+scoreboard objectives remove MRL_MisileUUID2
+scoreboard objectives remove MRL_MisileUUID3
+scoreboard objectives remove MRL_TargetUUID0
+scoreboard objectives remove MRL_TargetUUID1
+scoreboard objectives remove MRL_TargetUUID2
+scoreboard objectives remove MRL_TargetUUID3
+scoreboard objectives remove MRL_PrvTgtUUID0
+scoreboard objectives remove MRL_PrvTgtUUID1
+scoreboard objectives remove MRL_PrvTgtUUID2
+scoreboard objectives remove MRL_PrvTgtUUID3
+scoreboard objectives remove MRL_TargetReset
+scoreboard objectives remove MRL_TargetChange
+scoreboard objectives remove MRL_DiffX
+scoreboard objectives remove MRL_DiffY
+scoreboard objectives remove MRL_DiffZ
+scoreboard objectives remove MRL_PowDiffX
+scoreboard objectives remove MRL_PowDiffY
+scoreboard objectives remove MRL_PowDiffZ
+scoreboard objectives remove MRL_NormXYZ
+scoreboard objectives remove MRL_SqrtXYZ
+scoreboard objectives remove MRL_SqrtVarI
+scoreboard objectives remove MRL_SqrtVarX
+## Remove scoreboards for summoning trader
+scoreboard objectives remove MRL_PlayMinute
 
 ## Remove objectives
 scoreboard players reset #mrl

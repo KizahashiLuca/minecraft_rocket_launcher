@@ -9,51 +9,53 @@
 #########################################################
 
 ## Add scoreboards
-scoreboard objectives add OnLoad dummy
+scoreboard objectives add MRL_OnLoad dummy
 ## Add scoreboards for position
-scoreboard objectives add PosX dummy
-scoreboard objectives add PosY dummy
-scoreboard objectives add PosZ dummy
+scoreboard objectives add MRL_PosX dummy
+scoreboard objectives add MRL_PosY dummy
+scoreboard objectives add MRL_PosZ dummy
 ## Add scoreboards for calculation
-scoreboard objectives add 1000 dummy
+scoreboard objectives add MRL_1000 dummy
 ## Add scoreboards for launcher common
-scoreboard objectives add PlayerUUID0 dummy
-scoreboard objectives add PlayerUUID1 dummy
-scoreboard objectives add PlayerUUID2 dummy
-scoreboard objectives add PlayerUUID3 dummy
-scoreboard objectives add NotExplosive dummy
+scoreboard objectives add MRL_PlayerUUID0 dummy
+scoreboard objectives add MRL_PlayerUUID1 dummy
+scoreboard objectives add MRL_PlayerUUID2 dummy
+scoreboard objectives add MRL_PlayerUUID3 dummy
+scoreboard objectives add MRL_NotExplosive dummy
 ## Add scoreboards for rocket launcher
-scoreboard objectives add RocketUUID0 dummy
-scoreboard objectives add RocketUUID1 dummy
-scoreboard objectives add RocketUUID2 dummy
-scoreboard objectives add RocketUUID3 dummy
+scoreboard objectives add MRL_RocketUUID0 dummy
+scoreboard objectives add MRL_RocketUUID1 dummy
+scoreboard objectives add MRL_RocketUUID2 dummy
+scoreboard objectives add MRL_RocketUUID3 dummy
 ## Add scoreboards for misile launcher
-scoreboard objectives add MisileUUID0 dummy
-scoreboard objectives add MisileUUID1 dummy
-scoreboard objectives add MisileUUID2 dummy
-scoreboard objectives add MisileUUID3 dummy
-scoreboard objectives add TargetUUID0 dummy
-scoreboard objectives add TargetUUID1 dummy
-scoreboard objectives add TargetUUID2 dummy
-scoreboard objectives add TargetUUID3 dummy
-scoreboard objectives add PrvTargetUUID0 dummy
-scoreboard objectives add PrvTargetUUID1 dummy
-scoreboard objectives add PrvTargetUUID2 dummy
-scoreboard objectives add PrvTargetUUID3 dummy
-scoreboard objectives add TargetReset dummy
-scoreboard objectives add TargetChanged dummy
-scoreboard objectives add DiffX dummy
-scoreboard objectives add DiffY dummy
-scoreboard objectives add DiffZ dummy
-scoreboard objectives add PowDiffX dummy
-scoreboard objectives add PowDiffY dummy
-scoreboard objectives add PowDiffZ dummy
-scoreboard objectives add NormXYZ dummy
-scoreboard objectives add SqrtXYZ dummy
-scoreboard objectives add SqrtVarI dummy
-scoreboard objectives add SqrtVarX dummy
+scoreboard objectives add MRL_MisileUUID0 dummy
+scoreboard objectives add MRL_MisileUUID1 dummy
+scoreboard objectives add MRL_MisileUUID2 dummy
+scoreboard objectives add MRL_MisileUUID3 dummy
+scoreboard objectives add MRL_TargetUUID0 dummy
+scoreboard objectives add MRL_TargetUUID1 dummy
+scoreboard objectives add MRL_TargetUUID2 dummy
+scoreboard objectives add MRL_TargetUUID3 dummy
+scoreboard objectives add MRL_PrvTgtUUID0 dummy
+scoreboard objectives add MRL_PrvTgtUUID1 dummy
+scoreboard objectives add MRL_PrvTgtUUID2 dummy
+scoreboard objectives add MRL_PrvTgtUUID3 dummy
+scoreboard objectives add MRL_TargetReset dummy
+scoreboard objectives add MRL_TargetChange dummy
+scoreboard objectives add MRL_DiffX dummy
+scoreboard objectives add MRL_DiffY dummy
+scoreboard objectives add MRL_DiffZ dummy
+scoreboard objectives add MRL_PowDiffX dummy
+scoreboard objectives add MRL_PowDiffY dummy
+scoreboard objectives add MRL_PowDiffZ dummy
+scoreboard objectives add MRL_NormXYZ dummy
+scoreboard objectives add MRL_SqrtXYZ dummy
+scoreboard objectives add MRL_SqrtVarI dummy
+scoreboard objectives add MRL_SqrtVarX dummy
+## Add scoreboards for summoning trader
+scoreboard objectives add MRL_PlayMinute minecraft.custom:minecraft.play_one_minute
 
 ## Set scoreboards
-scoreboard players set #mrl OnLoad 1
+scoreboard players set #mrl MRL_OnLoad 1
 ## Set scoreboards for calculation
-scoreboard players set #mrl 1000 1000
+scoreboard players set #mrl MRL_1000 1000
