@@ -13,5 +13,11 @@ gamerule maxCommandChainLength 65536
 
 ## Send Title Message
 function mrl:system/load/message
+
+## Remove scoreboards
+function mrl:system/unload/remove_scoreboard
+## Remove tags - players
+tag @a remove MRL_SetUUID
+
 ## Set scoreboards
 function mrl:system/load/set_scoreboard

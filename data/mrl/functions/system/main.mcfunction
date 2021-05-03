@@ -21,4 +21,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=MRL_IgnitedMisile] at @s run 
 
 ## Summon Arms Trader
 scoreboard players set @a[scores={MRL_PlayMinute=24000..}] MRL_PlayMinute 0
-execute as @a at @s if predicate mrl:summon_trader/condition run function mrl:system/summon/arms_trader
+execute as @a at @s unless entity @e[type=minecraft:wandering_trader,tag=MRL_ArmsTrader] if predicate mrl:summon_trader/condition run function mrl:system/summon/arms_trader

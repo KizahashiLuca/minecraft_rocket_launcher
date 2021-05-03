@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "mrl:system/reload/main"
+    "mrl:system/load/main"
   ]
 }
