@@ -40,7 +40,6 @@ scoreboard objectives remove MRL_PrvTgtUUID0
 scoreboard objectives remove MRL_PrvTgtUUID1
 scoreboard objectives remove MRL_PrvTgtUUID2
 scoreboard objectives remove MRL_PrvTgtUUID3
-scoreboard objectives remove MRL_TargetReset
 scoreboard objectives remove MRL_TargetChange
 scoreboard objectives remove MRL_DiffX
 scoreboard objectives remove MRL_DiffY

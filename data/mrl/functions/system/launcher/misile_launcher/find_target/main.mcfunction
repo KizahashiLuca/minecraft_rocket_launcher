@@ -9,6 +9,18 @@
 #########################################################
 
 ## Add a tag
-execute as @s[predicate=mrl:before_shot/misile_launcher/mainhand,predicate=mrl:before_shot/misile_launcher/sneak] at @s run function mrl:system/launcher/misile_launcher/find_target/set_target
-execute as @s[predicate=mrl:before_shot/misile_launcher/offhand,predicate=mrl:before_shot/misile_launcher/sneak] at @s run function mrl:system/launcher/misile_launcher/find_target/set_target
-execute as @s[predicate=!mrl:before_shot/misile_launcher/mainhand,predicate=!mrl:before_shot/misile_launcher/offhand] at @s run function mrl:system/launcher/misile_launcher/find_target/reset_target
+tag @p[predicate=mrl:before_shot/misile_launcher/in_hand] add MRL_ReadyMisileLauncher
+tag @p[predicate=mrl:before_shot/misile_launcher/in_hand] add MRL_ReadiedMisileLauncher
+
+## Set target
+execute if entity @p[tag=!MRL_LockonTarget,tag=MRL_ReadyMisileLauncher,predicate=mrl:before_shot/misile_launcher/mainhand,predicate=mrl:before_shot/misile_launcher/sneak] run function mrl:system/launcher/misile_launcher/find_target/set_target
+execute if entity @p[tag=!MRL_LockonTarget,tag=MRL_ReadyMisileLauncher,predicate=mrl:before_shot/misile_launcher/offhand,predicate=mrl:before_shot/misile_launcher/sneak] run function mrl:system/launcher/misile_launcher/find_target/set_target
+
+## Remove a tag
+tag @a remove MRL_ReadyMisileLauncher
+
+## Find target Loop
+execute if entity @p[tag=!MRL_ReadiedMisileLauncher,predicate=mrl:before_shot/misile_launcher/in_hand] run function mrl:system/launcher/misile_launcher/find_target/main
+
+## Remove a tag
+tag @a remove MRL_ReadiedMisileLauncher

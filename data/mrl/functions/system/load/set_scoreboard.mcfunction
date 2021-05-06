@@ -40,7 +40,6 @@ scoreboard objectives add MRL_PrvTgtUUID0 dummy
 scoreboard objectives add MRL_PrvTgtUUID1 dummy
 scoreboard objectives add MRL_PrvTgtUUID2 dummy
 scoreboard objectives add MRL_PrvTgtUUID3 dummy
-scoreboard objectives add MRL_TargetReset dummy
 scoreboard objectives add MRL_TargetChange dummy
 scoreboard objectives add MRL_DiffX dummy
 scoreboard objectives add MRL_DiffY dummy

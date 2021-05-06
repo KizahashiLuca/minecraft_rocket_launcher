@@ -30,11 +30,11 @@ execute as @e[type=minecraft:firework_rocket,tag=MRL_Misile] at @s unless block 
 execute as @e[type=minecraft:firework_rocket,tag=MRL_Misile] at @s if entity @e[tag=MRL_MisileTarget,sort=nearest,distance=..1.5] run scoreboard players set @e[tag=MRL_MisileCloud,limit=1] MRL_NotExplosive 0
 
 ## If shot player is near by, it will not explode
-execute as @a if score @e[tag=MRL_MisileCloud,limit=1] MRL_PlayerUUID0 = @s MRL_PlayerUUID0 if score @e[tag=MRL_MisileCloud,limit=1] MRL_PlayerUUID1 = @s MRL_PlayerUUID1 if score @e[tag=MRL_MisileCloud,limit=1] MRL_PlayerUUID2 = @s MRL_PlayerUUID2 if score @e[tag=MRL_MisileCloud,limit=1] MRL_PlayerUUID3 = @s MRL_PlayerUUID3 run tag @s add MRL_MisileShooter
-execute as @p[tag=MRL_MisileShooter,distance=..2] run scoreboard players set @e[tag=MRL_MisileCloud,limit=1] MRL_NotExplosive 1
+execute if entity @p[tag=!MRL_DetectedPlayer,distance=..2] run function mrl:system/launcher/misile_launcher/detect_player
+execute if entity @p[tag=MRL_ShotMisileLauncher] run scoreboard players set @e[tag=MRL_MisileCloud,limit=1] MRL_NotExplosive 1
 
 ## Explode
-execute as @e[tag=MRL_MisileCloud,scores={MRL_NotExplosive=0},limit=1] at @s run function mrl:system/launcher/misile_launcher/explode
+execute as @e[tag=MRL_MisileCloud,scores={MRL_NotExplosive=0},limit=1] at @s run summon minecraft:tnt ~ ~ ~
 
 ## Kill firework rocket
 execute as @e[tag=MRL_MisileCloud,scores={MRL_NotExplosive=0},limit=1] run kill @e[tag=MRL_Misile]
@@ -48,4 +48,4 @@ kill @e[type=minecraft:area_effect_cloud,tag=MRL_MisileCloud]
 ## Remove a tag
 tag @e[tag=MRL_Misile] remove MRL_Misile
 tag @e[tag=MRL_MisileTarget] remove MRL_MisileTarget
-tag @e[tag=MRL_MisileShooter] remove MRL_MisileShooter
+tag @e[tag=MRL_ShotMisileLauncher] remove MRL_ShotMisileLauncher

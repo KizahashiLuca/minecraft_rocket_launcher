@@ -8,12 +8,21 @@
 ## This work is licensed under a CC BY-SA 4.0 license. ##
 #########################################################
 
+## Add a tag
+tag @p[predicate=mrl:after_shot/in_inventory] add MRL_ShotLauncher
+
 ## Rocket Launcher
-execute as @s[predicate=mrl:after_shot/rocket_launcher/mainhand] run function mrl:system/launcher/rocket_launcher/detect_shoot/mainhand
-execute as @s[predicate=mrl:after_shot/rocket_launcher/offhand] run function mrl:system/launcher/rocket_launcher/detect_shoot/offhand
+execute if entity @p[tag=MRL_ShotLauncher,predicate=mrl:after_shot/rocket_launcher/mainhand] run function mrl:system/launcher/rocket_launcher/detect_shoot/mainhand
+execute if entity @p[tag=MRL_ShotLauncher,predicate=mrl:after_shot/rocket_launcher/offhand] run function mrl:system/launcher/rocket_launcher/detect_shoot/offhand
 
 ## Misile Launcher
-execute as @s[scores={MRL_TargetReset=0},predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_success
-execute as @s[scores={MRL_TargetReset=0},predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_success
-execute as @s[scores={MRL_TargetReset=1..},predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_failed
-execute as @s[scores={MRL_TargetReset=1..},predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_failed
+execute if entity @p[tag=MRL_ShotLauncher,tag=MRL_LockonTarget,predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_success
+execute if entity @p[tag=MRL_ShotLauncher,tag=MRL_LockonTarget,predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_success
+execute if entity @p[tag=MRL_ShotLauncher,tag=!MRL_LockonTarget,predicate=mrl:after_shot/misile_launcher/mainhand] run function mrl:system/launcher/misile_launcher/detect_shoot/mainhand_failed
+execute if entity @p[tag=MRL_ShotLauncher,tag=!MRL_LockonTarget,predicate=mrl:after_shot/misile_launcher/offhand] run function mrl:system/launcher/misile_launcher/detect_shoot/offhand_failed
+
+## Remove a tag
+tag @a remove MRL_ShotLauncher
+
+## Launcher Loop
+execute if entity @p[predicate=mrl:after_shot/in_inventory] run function mrl:system/launcher/main

@@ -8,18 +8,18 @@
 ## This work is licensed under a CC BY-SA 4.0 license. ##
 #########################################################
 
+## Add a tag
+tag @p[tag=MRL_ShotLauncher,predicate=mrl:after_shot/rocket_launcher/offhand] add MRL_ShotRocketLauncher
+
 ## Replace item
-replaceitem entity @s weapon.offhand minecraft:air
+replaceitem entity @p[tag=MRL_ShotRocketLauncher] weapon.offhand minecraft:air
 
 ## Play sound
-playsound entity.item.break player @a ~ ~ ~ 1.0 1.0
-
-## Add a tag
-tag @s add MRL_RocketShooter
+execute at @p[tag=MRL_ShotRocketLauncher] run playsound entity.item.break player @a ~ ~ ~ 1.0 1.0
 
 ## Detect firework_rocket
 execute as @e[type=minecraft:firework_rocket,tag=!MRL_IgnitedRocket] run function mrl:system/launcher/rocket_launcher/detect_shoot/detect_rocket
-execute as @e[type=minecraft:firework_rocket,tag=MRL_IgnitingRocket] run function mrl:system/launcher/rocket_launcher/detect_shoot/igniting_rocket
+execute as @e[type=minecraft:firework_rocket,tag=MRL_IgnitingRocket] at @p[tag=MRL_ShotRocketLauncher] run function mrl:system/launcher/rocket_launcher/detect_shoot/igniting_rocket
 
 ## Remove a tag
-tag @s remove MRL_RocketShooter
+tag @a remove MRL_ShotRocketLauncher

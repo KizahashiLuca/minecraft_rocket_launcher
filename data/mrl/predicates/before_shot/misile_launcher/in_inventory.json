@@ -1,7 +1,0 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Inventory:[{id:\"minecraft:crossbow\",Count:1b,tag:{Charged:1b,Tags:[\"MRL_MisileLauncher\"]}}]}"
-  }
-}
