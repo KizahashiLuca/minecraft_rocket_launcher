@@ -9,9 +9,21 @@
  - 配布に関して問題があれば削除いたします。ご了承ください。
 
 ## データパック 使用の流れ
+
+## サバイバルモード（チートオフ）
  1. ダウンロードしたZipファイルを各ワールドの `datapacks` フォルダに格納
  2. ゲーム内で1日経過すると、5%の確率で `Arms Trader` がスポーン
- 2. `Arms Trader` よりランチャーを入手することが可能
+ 3. `Arms Trader` よりランチャーを入手することが可能
+
+## クリエイティブモード（チートオン）
+ - ロケットランチャー取得のコマンド
+   ```mcfunction
+   /loot give @s loot mrl:rocket_launcher
+   ```
+ - ミサイルランチャー取得のコマンド
+   ```mcfunction
+   /loot give @s loot mrl:misile_launcher
+   ```
 
 ## スタッフ
  - 企画制作著作 : きざはしるか [@KizahashiLuca](https://twitter.com/KizahashiLuca)
