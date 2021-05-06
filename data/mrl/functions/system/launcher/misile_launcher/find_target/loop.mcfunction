@@ -18,7 +18,6 @@ execute unless entity @p[tag=MRL_DetectLockon,distance=..50] run kill @e[type=mi
 
 ## Find target
 execute if entity @p[tag=MRL_DetectLockon,distance=3..] if entity @e[type=!#mrl:not_mob,distance=..1.5,sort=nearest] run function mrl:system/launcher/misile_launcher/find_target/found
-title @a[tag=MRL_LockonTarget] actionbar ["",{"text":"lockon"}]
 
 ## Add a tag
 tag @s add MRL_NotFoundTarget
