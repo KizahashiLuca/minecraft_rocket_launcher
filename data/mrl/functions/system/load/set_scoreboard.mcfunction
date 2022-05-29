@@ -52,7 +52,7 @@ scoreboard objectives add MRL_SqrtXYZ dummy
 scoreboard objectives add MRL_SqrtVarI dummy
 scoreboard objectives add MRL_SqrtVarX dummy
 ## Add scoreboards for summoning trader
-scoreboard objectives add MRL_PlayMinute minecraft.custom:minecraft.play_one_minute
+scoreboard objectives add MRL_PlayMinute minecraft.custom:minecraft.play_time
 
 ## Set scoreboards
 scoreboard players set #mrl MRL_OnLoad 1

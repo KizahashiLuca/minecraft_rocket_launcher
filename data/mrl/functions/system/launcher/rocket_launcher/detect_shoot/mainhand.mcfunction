@@ -12,7 +12,7 @@
 tag @p[tag=MRL_ShotLauncher,predicate=mrl:after_shot/rocket_launcher/mainhand] add MRL_ShotRocketLauncher
 
 ## Replace item
-replaceitem entity @p[tag=MRL_ShotRocketLauncher] weapon.mainhand minecraft:air
+loot replace entity @p[tag=MRL_ShotRocketLauncher] weapon.mainhand loot minecraft:empty
 
 ## Play sound
 execute at @p[tag=MRL_ShotRocketLauncher] run playsound entity.item.break player @a ~ ~ ~ 1.0 1.0
